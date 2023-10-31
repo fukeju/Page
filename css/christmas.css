@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+}
+
+.next {
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 20px;
+}
+
+.next::after {
+    position: absolute;
+    left: 50px;
+    content: "";
+    border-left: 13px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
